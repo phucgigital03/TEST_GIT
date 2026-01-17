@@ -5,3 +5,14 @@ Code ban dau
 4445
 78910
 111213
+***Note:
+Lý do là vì bạn đã thực hiện việc đó rồi (ở bước bạn xử lý Conflict và Commit trước đó).
+Hãy nhìn lại quá trình bạn vừa làm, nó diễn ra như sau:
+Bạn đã gõ git pull origin main (lần trước).
+Git đã tải code từ main về, nhưng thấy bị trùng dòng code với bạn -> Báo Conflict.
+Bạn đã sửa file, chọn nội dung code mong muốn -> Đây chính là lúc bạn gộp code của main vào code của bạn.
+Bạn đã git commit -> Lưu lại kết quả gộp.
+Kết luận: Hiện tại nhánh feature-dev của bạn đã chứa toàn bộ những gì nhánh main có, cộng thêm code mới của bạn. Nó đang "xịn" hơn và mới hơn main.
+Khi bạn gõ git pull origin main thêm một lần nữa: Git kiểm tra và thấy: 
+"À, nhánh feature-dev này đã có hết mấy cái commit của main rồi, 
+không có gì mới trên main để lấy nữa cả". => Nên nó báo: Already up to date (Đã cập nhật mới nhất).

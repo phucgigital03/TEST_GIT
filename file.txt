@@ -14,3 +14,5 @@ change remote server
 Case 1: Current = Code của bạn và Incoming = Code server -> git config --global pull.rebase false 
 Case 2: Current = Code server và Incoming = Code của bạn  -> git config --global pull.rebase true 
 
+***Note:
+After: "pull origin A", the current branch had *all commit of A branch and *Conflict commit 

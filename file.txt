@@ -9,3 +9,7 @@ newline1
 newline2
 newline45
 change local line 11
+
+***Note:
+Case 1: Current = Code của bạn và Incoming = Code server -> git config --global pull.rebase false 
+Case 2: Current = Code server và Incoming = Code của bạn  -> git config --global pull.rebase true 

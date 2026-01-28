@@ -8,7 +8,7 @@ Code ban dau
 newline1
 newline2
 newline45
-change remote server
+change local 1
 
 ***Note:
 Case 1: Current = Code của bạn và Incoming = Code server -> git config --global pull.rebase false 

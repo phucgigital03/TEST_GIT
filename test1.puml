@@ -1,0 +1,24 @@
+@startuml
+title Mixed GOTO: Hiển thị Node GOTO + Mũi tên thẳng
+
+start
+
+repeat :LABEL: LOOP_DAU;
+
+  ' 1. NHÁNH VIP (SKIP)
+  if (LOAIKH IFEQ 'VIP'?) then (yes)
+    #Pink:GOTO LOOP_CUOI;
+    break
+  else (no)
+    :EXSR XY_LY_CHINH;
+  endif
+
+' 3. ĐÁY VÒNG LẶP (ĐIỂM HỘI TỤ)
+' Logic kiểm tra ở đây khớp với IF ở trên
+repeat while () is (GOTO LOOP_DAU)
+
+:LABEL: LOOP_CUOI;
+:EXSR INVOICE;
+
+stop
+@enduml

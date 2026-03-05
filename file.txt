@@ -18,5 +18,5 @@ Khi bạn gõ git pull origin main thêm một lần nữa: Git kiểm tra và t
 không có gì mới trên main để lấy nữa cả". => Nên nó báo: Already up to date (Đã cập nhật mới nhất).
 edit on server with line 19.
 edit on line 20.
-edit on line 21.
+on 21
 edit on line 22.
